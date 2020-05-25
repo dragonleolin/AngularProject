@@ -1,0 +1,20 @@
+<div id="header">
+  <div id="logo">
+    <div id="logo_text">
+      <!-- class="logo_colour", allows you to change the colour of the text -->
+      <h1><a href="index.html">black<span class="logo_colour">_pink</span><span class="logo_colour2">_white</span></a></h1>
+      <h2>Simple. Contemporary. Website Template.</h2>
+    </div>
+  </div>
+  <div id="menubar">
+
+    <ul id="menu">
+      <button (click)="deleteNumber()">-1</button>
+     <li routerLinkActive="selected"><a [routerLink]="['content', 'home',{name:1}]">Home</a></li>
+     <li routerLinkActive="selected"><a [routerLink]="['content', 'examples']">Examples</a></li>
+     <li routerLinkActive="selected"><a [routerLink]="['content', 'page']">Pages</a></li>
+     <li routerLinkActive="selected"><a [routerLink]="['content', 'anther']">AntherPage</a></li>
+     <li routerLinkActive="selected"><a [routerLink]="['content', 'contacts']">AntherPage</a></li>
+    </ul>
+  </div>
+</div>
